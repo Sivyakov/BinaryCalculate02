@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/input_field"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Введите число"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="211dp"
+        android:layout_height="84dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="151dp">
+
+        <RadioButton
+            android:id="@+id/option_binary"
+            android:layout_width="70dp"
+            android:layout_height="85dp"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/option_octal"
+            android:layout_width="70dp"
+            android:layout_height="85dp"
+            android:text="8" />
+
+        <RadioButton
+            android:id="@+id/option_hexadecima"
+            android:layout_width="70dp"
+            android:layout_height="85dp"
+            android:text="16" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/result_label"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/do_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Do"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="276dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="ok"
+        app:layout_constraintStart_toEndOf="@+id/do_button"
+        tools:layout_editor_absoluteY="276dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
